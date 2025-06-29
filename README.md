@@ -16,15 +16,14 @@ A full-stack web application to streamline project planning, task tracking, and 
 - **Database**: MongoDB (Cloud via Atlas)
 - **API**: RESTful with JWT + Email Support
 
-## ⚙️ How to Run
+# Frontend (.env)
+VITE_API_BASE_URL=https://your-backend.onrender.com/api
 
-### Frontend
-```bash
-cd client
-npm install
-npm run dev
+# Backend (application.properties)
+- spring.data.mongodb.uri=mongodb+srv://<user>:<pass>@cluster.mongodb.net/project-db
+- jwt.secret=your_jwt_secret
+- email.username=your_email@example.com
+- email.password=your_app_password
 
-## Frontend
-cd server
-./mvnw clean install
-./mvnw spring-boot:run
+# 👨‍💻 Developed by Santhosh Kumar
+
